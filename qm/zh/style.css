@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC&display=swap');
+*{
+  font-family: "LXGW WenKai TC", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  height: 1000px;
+  justify-content: center;
+  align-items: center;
+  background-color: #c1d9c7;
+  position: relative;
+}
+.img{
+  border: 1px solid #bbb5f7;
+}
+.search-container {
+    position: fixed;
+    top: 5%; /* 可以根據需要調整這個值 */
+    left: 5%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0 10px;
+}
+
+#searchinput{
+  padding: 10px;
+  max-width: 300px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  border: 5px solid #bbb5f7;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+ul {
+  list-style-type: none;
+  max-width: 600px;
+  margin: 20px auto;
+  padding-top: 100px;
+  z-index: 1; /* 確保其位於半透明背景上面 */
+}
+li {
+  background: #fff;
+  margin-bottom: 15px;
+  padding: 15px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+li:hover {
+    background-color: #e3ecfa;
+}
+.productName h3 {
+    margin: 0;
+    color: #333;
+}
+
+.productDescription {
+    color: #777;
+}
+/*@media (min-width: 600px) {
+    #searchinput {
+        max-width: 400px; 
+    }
+}
+@media (min-width: 900px) {
+    #searchinput {
+        max-width: 500px;
+    }
+}*/
